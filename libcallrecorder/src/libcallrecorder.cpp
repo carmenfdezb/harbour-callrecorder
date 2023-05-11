@@ -128,7 +128,7 @@ namespace LibCallRecorder
     {
         Q_UNUSED(type)
 
-#ifdef __x86_64__
+#ifdef __aarch64__
         #define ADDRESS quint64
         const int WIDTH = 16;
 #else

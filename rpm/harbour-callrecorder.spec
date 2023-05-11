@@ -90,6 +90,6 @@ fi
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
-%{_libdir}/systemd/user/%{name}d.service
+/usr/lib/systemd/user/%{name}d.service
 # >> files
 # << files
