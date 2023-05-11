@@ -49,7 +49,7 @@ Dialog
         directorySort: FileModel.SortDirectoriesBeforeFiles
         sortBy: FileModel.SortByName
         sortOrder: Qt.AscendingOrder
-        path: '/home/nemo'
+        path: '$HOME'
     }
 
     Column
@@ -251,7 +251,7 @@ Dialog
                     {
                         icon.source: 'qrc:/images/icon-m-home.png'
 
-                        onClicked: fileModel.path = '/home/nemo'
+                        onClicked: fileModel.path = '$HOME'
                     }
 
                     IconButton

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIGDIR=/home/nemo/.config/harbour-callrecorder
+CONFIGDIR=$HOME/.config/harbour-callrecorder
 CONFIG="$CONFIGDIR/callrecorder.ini"
 ENVFILE="$CONFIGDIR/environment"
 
