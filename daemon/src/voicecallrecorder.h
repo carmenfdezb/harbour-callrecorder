@@ -63,8 +63,9 @@ private slots:
     void onAudioInputDeviceReadyRead();
     void onAudioInputStateChanged(QAudio::State state);
     void onVoiceCallLineIdentificationChanged(const QString& lineIdentification);
-
     void processOfonoState(const QString& state);
+
+    void startAudioCapture();
 
 private:
     void arm();
@@ -76,6 +77,7 @@ private:
 private:
     class VoiceCallRecorderPrivate;
     QScopedPointer< VoiceCallRecorderPrivate > d;
+
 };
 
 #endif // HARBOUR_CALLRECORDERD_VOICECALLRECORDER_H

@@ -26,8 +26,6 @@
 
 #include "voicecallrecorder.h"
 
-#define daemon (reinterpret_cast< Application* >(qApp))
-
 class Database;
 class DBusAdaptor;
 class Model;
@@ -102,5 +100,7 @@ private:
     class ApplicationPrivate;
     QScopedPointer< ApplicationPrivate > d;
 };
+
+#define callrecorderDaemon (reinterpret_cast< Application* >(qApp))
 
 #endif // HARBOUR_CALLRECORDERD_APPLICATION_H

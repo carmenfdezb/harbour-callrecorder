@@ -81,7 +81,6 @@ if [ $1 = 0 ]; then
     echo "Stopping service..."
     systemctl-user stop harbour-callrecorderd
 fi
-# << uninstall pre
 
 %files
 %defattr(-,root,root,-)
